@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.animation {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+path {
+	stroke-dasharray: 30;
+	stroke-dashoffset: 30;
+	opacity: 0;
+	
+	animation: draw 5s linear forwards;
+	-webkit-animation: draw 5s linear forwards;
+	
+}
+
+@keyframes draw {
+	100% {
+		stroke-dashoffset: 0;
+		opacity: 1;
+		fill: #297F00;
+		fill: #51A300;
+		fill: #059800;
+		fill: #297F00;
+		fill: 'url(#fillGrad9)';
+		fill: #3AB200;
+		stroke: #611700;
+		
+		
+		
+		
+	}
+	
+}
+
